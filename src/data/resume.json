@@ -1,0 +1,122 @@
+{
+  "sections": [
+    {
+      "title": "Education",
+      "entries": [
+        {
+          "title": "B.Tech in Electronics and Communication Engineering",
+          "company": "@Malaviya National Institute of Technology (MNIT), Jaipur",
+          "dates": "2022 - 2026",
+          "bulletPoints": [
+            "B.Tech Completed",
+            "CGPA: 7.21"
+          ]
+        },
+        {
+          "title": "+2 Intermediate",
+          "company": "@Prince Uch Madhyamik Vidyalaya, Rajasthan",
+          "dates": "2021",
+          "bulletPoints": [
+            "Percentage: 95.33%"
+          ]
+        },
+        {
+          "title": "Matriculation",
+          "company": "@Tagore International School, Bhadra",
+          "dates": "2019",
+          "bulletPoints": [
+            "Percentage: 93.8%"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "entries": [
+        {
+          "title": "Software Development Intern",
+          "company": "@Bharti Airtel Limited",
+          "dates": "May 2025 - July 2025",
+          "bulletPoints": [
+            "Developed an internal network monitoring dashboard using Python, Flask, and MySQL to track real-time network performance metrics across multiple towers.",
+            "Built REST APIs for data aggregation from network devices and integrated SMS alert system using Twilio API for critical failures.",
+            "Designed the frontend using React.js with interactive charts to visualize tower uptime, signal strength, and customer complaints.",
+            "Implemented user authentication and role-based access control for network engineers and managers.",
+            "Deployed the application on AWS EC2 and documented the entire system architecture and API endpoints."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Certifications",
+      "entries": [
+        {
+          "title": "Full-Stack AI Engineer 2026: ML, Generative AI",
+          "company": "@Udemy",
+          "dates": "2026 - Present",
+          "bulletPoints": [
+            "Master Python, Machine Learning, DL, MLOps, and Gen AI through hands-on projects to become a Full-Stack AI Engineer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Achievements",
+      "entries": [
+        {
+          "title": "Top 1% Rank in JEE Mains",
+          "company": "@National Testing Agency",
+          "dates": "",
+          "bulletPoints": [
+            "Secured top 1% rank out of over 1 million candidates."
+          ]
+        },
+        {
+          "title": "Codeforces Specialist",
+          "company": "@Codeforces",
+          "dates": "Rating: 1540",
+          "bulletPoints": [
+            "Competitive Programming profile: ankitmnit"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "entries": [
+        {
+          "title": "Languages",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "C++, Python, JavaScript, SQL, HTML, CSS"
+          ]
+        },
+        {
+          "title": "Frameworks/Libraries",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "React.js, Node.js, Express.js, Flask, Tailwind CSS, Bootstrap"
+          ]
+        },
+        {
+          "title": "Tools/Technologies",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "Git, GitHub, AWS (EC2), Docker, MySQL, Firebase, MongoDB"
+          ]
+        },
+        {
+          "title": "Specializations",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "Competitive Programming, Full-Stack Development, Generative AI, Machine Learning"
+          ]
+        }
+      ]
+    }
+  ]
+}
