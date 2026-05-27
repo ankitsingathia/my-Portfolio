@@ -1,0 +1,255 @@
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'RobotoMono', sans-serif;
+  color: white;
+  padding: 40px 0;
+
+  h2 {
+    font-size: clamp(1.8em, 4vw, 2.5em);
+    padding-top: 10px;
+    margin: 0 0 30px 0;
+    background: linear-gradient(135deg, #a855f7 0%, #d4a1ff 50%, #f0abfc 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'RobotoMono', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    animation: gradientShift 8s ease infinite;
+    filter: drop-shadow(0 4px 12px rgba(138, 43, 226, 0.3));
+  }
+
+  .about-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  
+    /* Vertically center the photo with text and header on desktop */
+    @media (min-width: 769px) {
+      align-items: center;
+    }
+  
+    /* Stack content and center text and photo on mobile */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text {
+      flex: 1;
+      padding-right: 0;
+      text-align: left;
+
+      /* Center text on mobile */
+      @media (max-width: 768px) {
+        text-align: center;
+        padding-right: 0;
+      }
+  
+      p {
+        font-size: clamp(1em, 2vw, 1.25em);
+        margin-bottom: 24px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.9);
+      }
+  
+      .purple-text {
+        background: linear-gradient(135deg, #a855f7 0%, #d4a1ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 600;
+
+        a {
+          background: none;
+          -webkit-background-clip: unset;
+          -webkit-text-fill-color: #d4a1ff;
+          background-clip: unset;
+          
+          &:hover {
+            -webkit-text-fill-color: #f0abfc;
+          }
+        }
+      }
+  
+      a {
+        color: #d4a1ff;
+        text-decoration: underline;
+        text-decoration-color: rgba(212, 161, 255, 0.5);
+        transition: all 0.3s ease;
+  
+        &:visited {
+          color: #d4a1ff;
+        }
+  
+        &:hover {
+          color: #f0abfc;
+          text-decoration-color: #f0abfc;
+          filter: drop-shadow(0 2px 4px rgba(138, 43, 226, 0.4));
+        }
+      }
+    }
+  
+    .about-photo {
+      flex: 0 0 30%;
+      padding-left: 5%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border: 3px solid transparent;
+        background: linear-gradient(135deg, #a855f7, #d4a1ff) padding-box,
+                    linear-gradient(135deg, #a855f7, #d4a1ff) border-box;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(138, 43, 226, 0.3);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 32px rgba(138, 43, 226, 0.5);
+        }
+      }
+  
+      /* Ensure the photo is centered horizontally and vertically on mobile */
+      @media (max-width: 768px) {
+        width: 70%;
+        padding-left: 0;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  .about-technologies,
+  .about-contact {
+    margin-bottom: 40px;
+  }
+
+  .about-contact {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 10px;
+        font-family: 'RobotoMono', sans-serif;
+      }
+
+      input,
+      textarea {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'RobotoMono', sans-serif;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #8a2be2;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: 'RobotoMono', sans-serif;
+
+        &:hover {
+          background-color: #7a23d1; /* Slightly darker purple on hover */
+        }
+      }
+    }
+  }
+}
+
+.about-technologies-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: 'RobotoMono', sans-serif;
+  color: #fff;
+
+  .about-technologies {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #fff;
+      font-family: 'RobotoMono', sans-serif;
+    }
+
+    .technology-categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      /* Switch to single-column layout on small screens */
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
+
+      .technology-category {
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff;
+
+        h3 {
+          font-size: 1.5em;
+          margin-bottom: 30px;
+          text-align: center;
+          color: #fff;
+        }
+
+        .technology-items {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+
+          /* Adjust to two columns on small screens */
+          @media (max-width: 500px) {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+
+          .technology-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #fff;
+
+            i {
+              font-size: 3em;
+              margin-bottom: 10px;
+              color: #fff;
+            }
+
+            p {
+              margin: 0;
+              text-align: center;
+              color: #fff;
+              font-family: 'Inter', sans-serif;
+            }
+
+            &:hover {
+              color: #8a2be2; /* Purple highlight on hover */
+            }
+          }
+        }
+      }
+    }
+  }
+}

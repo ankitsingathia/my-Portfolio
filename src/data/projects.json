@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": "travelgenie",
+      "title": "TravelGenie",
+      "description": "An AI-powered trip planner that generates personalized day-wise itineraries using Google Gemini AI, featuring destination search and Firebase integration.",
+      "image": "TravelGenie.png",
+      "featured": true,
+      "category": "big",
+      "technologies": {
+        "languages": ["JavaScript", "HTML", "CSS"],
+        "frameworks": ["React", "Tailwind CSS"],
+        "libraries": ["Google Gemini AI", "Firebase Firestore", "Google Places API", "ShadCN"]
+      },
+      "tags": ["Full-Stack", "AI", "Travel Planner", "Google Gemini"],
+      "links": {
+        "github": "https://github.com/ankitsingathia/TravelGenie",
+        "demo": null
+      }
+    },
+    {
+      "id": "chat-app",
+      "title": "Real-Time Chat Application",
+      "description": "A full-stack MERN chat app with real-time bidirectional messaging via Socket.io, featuring JWT authentication and Cloudinary integration for media.",
+      "image": "ChatApp.png",
+      "featured": true,
+      "category": "big",
+      "technologies": {
+        "languages": ["JavaScript"],
+        "frameworks": ["MongoDB", "Express", "React", "Node.js"],
+        "libraries": ["Socket.io", "JWT", "Cloudinary", "Tailwind CSS"]
+      },
+      "tags": ["MERN Stack", "Socket.io", "Real-Time", "Full-Stack"],
+      "links": {
+        "github": "https://github.com/ankitsingathia/Realtime-Chat-App",
+        "demo": null
+      }
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio Website",
+      "description": "A modern, responsive portfolio website built with React and TypeScript to showcase projects and professional experience.",
+      "image": "Portfolio.png",
+      "featured": true,
+      "category": "small",
+      "technologies": {
+        "languages": ["TypeScript", "SASS", "HTML"],
+        "frameworks": ["React"],
+        "libraries": ["Styled Components", "React Router", "React Spring"]
+      },
+      "tags": ["Web App", "Portfolio", "React"],
+      "links": {
+        "github": "https://github.com/ankitsingathia/my-Portfolio",
+        "demo": "https://ankitsingathia.github.io/my-Portfolio"
+      }
+    }
+  ]
+}

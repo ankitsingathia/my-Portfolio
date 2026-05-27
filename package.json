@@ -1,0 +1,67 @@
+{
+  "name": "ankitsingathia-portfolio",
+  "version": "0.1.0",
+  "author": "Ankit Singathia <toankitsingathia@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankitsingathia/my-Portfolio.git"
+  },
+  "private": true,
+  "homepage": "https://ankitsingathia.github.io/my-Portfolio",
+  "packageManager": "pnpm@9.12.0",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-github-calendar": "^4.3.0",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.26.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.81.0",
+    "sass-loader": "^14.2.1",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.5.4",
+    "date-fns": "^3.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "gh-pages": "^6.1.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "date-fns": "^3.6.0"
+    }
+  },
+  "overrides": {
+    "date-fns": "^3.6.0"
+  }
+}

@@ -1,0 +1,197 @@
+.header-container {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(42, 26, 61, 0.95) 50%, rgba(30, 30, 30, 0.95) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: 'RobotoMono', sans-serif;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0 12px 48px rgba(138, 43, 226, 0.3),
+              0 4px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+
+  // Backdrop-filter lives on the pseudo-element so the header itself does
+  // not become a containing block for position: fixed descendants (the
+  // mobile nav relies on being positioned against the viewport).
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+    backdrop-filter: blur(20px);
+    pointer-events: none;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px 24px;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    max-width: calc(100% - 24px);
+    border-radius: 16px;
+
+    &::before {
+      border-radius: 16px;
+    }
+  }
+}
+
+.logo {
+  font-size: clamp(1.1em, 2.5vw, 1.5em);
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #e1e1e1 0%, #d4a1ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  
+  &:hover {
+    background: linear-gradient(135deg, #a855f7 0%, #d4a1ff 50%, #f0abfc 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 8px rgba(138, 43, 226, 0.4));
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* Vertically align navigation links */
+
+  /* Mobile: Show the nav as a full-screen menu when open */
+  @media (max-width: 768px) {
+    position: fixed; /* Fix the nav in place on small screens */
+    top: 0;
+    right: -100%; /* Initially hide the nav by moving it offscreen */
+    width: 100%; /* Full width for the mobile menu */
+    height: 100%; /* Full height for the mobile menu */
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.98) 0%, rgba(42, 26, 61, 0.98) 100%);
+    backdrop-filter: blur(20px);
+    flex-direction: column; /* Stack the nav items vertically */
+    justify-content: center; /* Center nav items vertically */
+    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+    z-index: 999; /* Layer it above other content */
+  }
+
+  &.open {
+    right: 0; /* Slide the nav into view when it's open */
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: clamp(0.9em, 1.5vw, 1.1em);
+  transition: all 0.3s ease;
+  font-family: 'RobotoMono', sans-serif;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+
+  &:hover {
+    color: #d4a1ff;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 2px 4px rgba(138, 43, 226, 0.3));
+  }
+
+  svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: clamp(1.2em, 4vw, 1.5em);
+  }
+}
+
+.hamburger {
+  display: none; /* Hide the hamburger menu by default */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+
+  /* Mobile: Show the hamburger menu icon, vertically centered by the
+     header's flex align-items: center. z-index keeps it above the
+     fixed-position nav when the menu is open. */
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  padding: 10px 20px;
+  border: 2px solid #a855f7;
+  background: rgba(168, 85, 247, 0.1);
+  color: #d4a1ff;
+  text-decoration: none;
+  font-size: clamp(0.9em, 1.5vw, 1.1em);
+  transition: all 0.3s ease;
+  font-family: 'RobotoMono', sans-serif;
+  border-radius: 8px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2);
+
+  &:hover {
+    background: linear-gradient(135deg, #a855f7 0%, #d4a1ff 100%);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+    border-color: #d4a1ff;
+  }
+
+  svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: clamp(1.2em, 4vw, 1.5em);
+    padding: 12px 24px;
+  }
+}
+
+.close-icon {
+  display: block; /* Show the close icon by default */
+  z-index: 1002; /* Ensure the close icon is above the nav */
+}
