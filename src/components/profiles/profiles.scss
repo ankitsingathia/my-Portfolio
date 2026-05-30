@@ -1,0 +1,152 @@
+.profiles-section {
+  padding: 80px 20px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.profiles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profiles-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  
+  &.text-gradient {
+    background: linear-gradient(135deg, #a855f7 0%, #d4a1ff 50%, #f0abfc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+.profile-card {
+  text-decoration: none;
+  background: rgba(42, 42, 42, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, var(--platform-color), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+  }
+
+  &:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--platform-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+    &::before {
+      opacity: 0.15;
+    }
+
+    .profile-icon {
+      transform: scale(1.1) rotate(5deg);
+      color: var(--platform-color);
+    }
+  }
+
+  .profile-icon {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.4s ease;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+
+  .profile-info {
+    z-index: 1;
+
+    h3 {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .username {
+      color: var(--platform-color);
+      font-family: 'Fira Code', monospace;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .rating {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    .description {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }
+
+  .card-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+    transition: left 0.6s ease;
+  }
+
+  &:hover .card-shine {
+    left: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profiles-title {
+    font-size: 2.2rem;
+  }
+
+  .profile-card {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
