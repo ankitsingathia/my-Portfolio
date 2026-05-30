@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "id": "travelgenie",
-      "title": "TravelGenie",
+      "id": "wanderly",
+      "title": "Wanderly",
       "description": "An AI-powered trip planner that generates personalized day-wise itineraries using Google Gemini AI, featuring destination search and Firebase integration.",
-      "image": "TravelGenie.png",
+      "image": "wanderly.gif",
       "featured": true,
       "category": "big",
       "technologies": {
@@ -14,8 +14,26 @@
       },
       "tags": ["Full-Stack", "AI", "Travel Planner", "Google Gemini"],
       "links": {
-        "github": "https://github.com/ankitsingathia/TravelGenie",
-        "demo": null
+        "github": "https://github.com/ankitsingathia/tripplanner",
+        "demo": "https://tripplanner-jtno.onrender.com"
+      }
+    },
+    {
+      "id": "mdps",
+      "title": "Multiple Disease Prediction System (MDPS)",
+      "description": "A professional, AI-driven healthcare system using machine learning to predict diseases based on user input, featuring a modern glassmorphism UI.",
+      "image": "mdpsgif.gif",
+      "featured": true,
+      "category": "big",
+      "technologies": {
+        "languages": ["Python"],
+        "frameworks": ["Streamlit"],
+        "libraries": ["Scikit-Learn", "Pickle", "Pandas", "NumPy"]
+      },
+      "tags": ["Machine Learning", "Healthcare", "Python", "Streamlit"],
+      "links": {
+        "github": "https://github.com/ankitsingathia/MDPS",
+        "demo": "https://lb6qshk8uqrhexvgmuthwy.streamlit.app/"
       }
     },
     {
@@ -40,7 +58,7 @@
       "id": "portfolio",
       "title": "Portfolio Website",
       "description": "A modern, responsive portfolio website built with React and TypeScript to showcase projects and professional experience.",
-      "image": "Portfolio.png",
+      "image": "Portfolio.gif",
       "featured": true,
       "category": "small",
       "technologies": {

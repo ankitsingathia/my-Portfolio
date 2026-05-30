@@ -15,11 +15,13 @@ import Projects from './components/projects/projects.tsx';
 // @ts-ignore
 import About from './components/about/about.tsx';
 // @ts-ignore
+import Profiles from './components/profiles/profiles.tsx';
+// @ts-ignore
 import Footer from './components/footer/footer.tsx';
 // @ts-ignore
 import ContributionMap from './components/contribution_map/contribution_map.tsx';
 // @ts-ignore
-import ChatBubble from './components/chat_bubble/chat_bubble.tsx';
+// import ChatBubble from './components/chat_bubble/chat_bubble.tsx';
 // @ts-ignore
 // import Speaking from './components/speaking/speaking.tsx';
 
@@ -39,6 +41,8 @@ const App: React.FC = () => {
         <Hero />
 
         <About />
+        
+        <Profiles />
 
         <Resume />
 
@@ -48,7 +52,7 @@ const App: React.FC = () => {
 
         <SocialLinks />
         <Footer />
-        <ChatBubble />
+        {/* <ChatBubble /> */}
       </AppContainer>
     </Router>
   );

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./about.scss";
 
-import ankit1 from "../../assets/me/jpg/IMG_20250301_170848.jpg";
-import ankit2 from "../../assets/me/webp/IMAGE.png";
+import portrait from "../../assets/me/jpg/potrait.png";
 
-const photos = [ankit1, ankit2];
+const photos = [portrait];
 
 const About: React.FC = () => {
   const [photo, setPhoto] = useState("");
@@ -21,7 +20,7 @@ const About: React.FC = () => {
           <h2 className="about-title">About Me</h2>
           <p>
             Hello! My name is <span className="purple-text">Ankit Singathia</span>.
-            I'm a passionate developer and final-year student at <span className="purple-text">MNIT Jaipur</span>, where I'm pursuing my B.Tech in Electronics and Communication Engineering.
+            I'm a passionate developer and a <span className="purple-text">Graduate from MNIT Jaipur</span>, where I completed my B.Tech in Electronics and Communication Engineering.
             Most recently, I completed a internship as a{" "}
             <span className="purple-text">
               Software Development Intern at{" "}
@@ -43,7 +42,7 @@ const About: React.FC = () => {
             I'm a Specialist on Codeforces and enjoy solving complex algorithmic problems.
           </p>
           <p>
-            I love building applications that solve real-world problems. Whether it's an AI-powered trip planner like <span className="purple-text">TravelGenie</span> or a real-time messaging platform, I strive to create seamless user experiences with modern technologies like React, Node.js, and Generative AI.
+            I love building applications that solve real-world problems. Whether it's an AI-powered trip planner like <span className="purple-text">Wanderly</span> or a professional AI diagnostic system like <span className="purple-text">MDPS</span>, I strive to create seamless user experiences with modern technologies like React, Node.js, and Generative AI.
           </p>
           <p>
             Beyond coding, I have a keen interest in film making and marketing. I've served as the{" "}
