@@ -39,7 +39,7 @@ const About: React.FC = () => {
               {" "}
               Full-Stack Development, AI/ML, and Competitive Programming.
             </span> {" "}
-            I'm a Specialist on Codeforces and enjoy solving complex algorithmic problems.
+            I practice on LeetCode and CodeChef and enjoy solving complex algorithmic problems.
           </p>
           <p>
             I love building applications that solve real-world problems. Whether it's an AI-powered trip planner like <span className="purple-text">Wanderly</span> or a professional AI diagnostic system like <span className="purple-text">MDPS</span>, I strive to create seamless user experiences with modern technologies like React, Node.js, and Generative AI.

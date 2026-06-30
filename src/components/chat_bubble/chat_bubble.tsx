@@ -15,7 +15,8 @@ const COMMANDS: Command[] = [
   { code: 'ankit.role',         output: '→ sde intern @ airtel',   duration: 700 },
   { code: 'ankit.tech',         output: '→ react, node, py, c++',  duration: 500 },
   { code: 'ankit.mnit',         output: '→ final year ece',        duration: 600 },
-  { code: 'ankit.cforces',      output: '→ specialist (1540)',     duration: 600 },
+  { code: 'ankit.leetcode',     output: '→ AnkitSingahia',         duration: 600 },
+  { code: 'ankit.codechef',     output: '→ 3-star (1651)',         duration: 600 },
   { code: "ankit.projects",     output: '→ 2+ shipped',            duration: 500 },
   { code: 'ankit.ai',          output: '→ gen ai enthusiast',    duration: 500 },
 ];

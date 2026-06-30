@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiCodechef, SiLeetcode } from 'react-icons/si';
 import { gradientShift } from '../../styles/animations';
 
 // Container for the entire social section
@@ -103,7 +104,8 @@ const SocialLinks: React.FC = () => {
       <SocialIcons>
         <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         <a href="https://www.linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://codeforces.com/profile/ankitmnit" target="_blank" rel="noopener noreferrer"><FaCode /></a>
+        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
+        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer"><SiCodechef /></a>
       </SocialIcons>
     </SocialContainer>
   );

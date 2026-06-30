@@ -72,11 +72,20 @@
           ]
         },
         {
-          "title": "Codeforces Specialist",
-          "company": "@Codeforces",
-          "dates": "Rating: 1540",
+          "title": "CodeChef 3-Star",
+          "company": "@CodeChef",
+          "dates": "Rating: 1651",
           "bulletPoints": [
-            "Competitive Programming profile: ankitmnit"
+            "Competitive Programming profile: ankitsingathia",
+            "Solved 30 problems on CodeChef"
+          ]
+        },
+        {
+          "title": "LeetCode Practice",
+          "company": "@LeetCode",
+          "dates": "",
+          "bulletPoints": [
+            "Data Structures and Algorithms profile: AnkitSingahia"
           ]
         }
       ]

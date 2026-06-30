@@ -291,7 +291,8 @@ const topLines = [
 const typewriterTexts = [
   "Software Development Intern @ Airtel",
   "B.Tech @ MNIT Jaipur",
-  "Codeforces Specialist (1540)",
+  "LeetCode DSA Practice",
+  "CodeChef 3-Star (1651)",
   "AI Enthusiast",
   "Full-Stack Developer",
   "Competitive Programmer",

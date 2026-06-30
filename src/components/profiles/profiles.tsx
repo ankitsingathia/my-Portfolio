@@ -1,26 +1,26 @@
 import React from 'react';
-import { SiCodeforces, SiLeetcode } from 'react-icons/si';
+import { SiCodechef, SiLeetcode } from 'react-icons/si';
 import './profiles.scss';
 
 const Profiles: React.FC = () => {
   const profiles = [
     {
-      platform: 'Codeforces',
-      username: 'AnkitMnit',
-      link: 'https://codeforces.com/profile/AnkitMnit',
-      icon: <SiCodeforces />,
-      color: '#1f8acb',
-      rating: 'Specialist (1540+)',
-      description: 'Competitive Programmer solving complex algorithmic challenges.'
-    },
-    {
       platform: 'LeetCode',
-      username: 'ankit_singathia1',
-      link: 'https://leetcode.com/u/ankit_singathia1/',
+      username: 'AnkitSingahia',
+      link: 'https://leetcode.com/u/AnkitSingahia/',
       icon: <SiLeetcode />,
       color: '#ffa116',
-      rating: 'Solved 300+ Problems',
-      description: 'Practicing data structures and algorithms for technical excellence.'
+      rating: 'DSA Practice',
+      description: 'Solving data structures and algorithms problems for technical interviews.'
+    },
+    {
+      platform: 'CodeChef',
+      username: 'ankitsingathia',
+      link: 'https://www.codechef.com/users/ankitsingathia',
+      icon: <SiCodechef />,
+      color: '#5b4638',
+      rating: '3-Star (1651)',
+      description: 'Competitive programming profile with 30 solved problems.'
     }
   ];
 
