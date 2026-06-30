@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.scss';
-import { FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiCodechef, SiLeetcode } from 'react-icons/si';
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +18,8 @@ const Footer: React.FC = () => {
       <div className="right-align social-icons">
         <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         <a href="https://linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://codeforces.com/profile/ankitmnit" target="_blank" rel="noopener noreferrer"><FaCode /></a>
+        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
+        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer"><SiCodechef /></a>
       </div>
     </footer>
   );
