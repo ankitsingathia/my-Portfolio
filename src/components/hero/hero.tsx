@@ -239,24 +239,6 @@ const TalkLink = styled.a`
   }
 `;
 
-// Styling for the talk description text
-const TalkDescription = styled.a`
-  display: block;
-  margin-top: 0.75em;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(0.85em, 1.5vw, 1em);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  align-self: flex-start;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.9);
-  }
-`;
-
 // Interface for circle properties
 interface CircleProps {
   id: number; /* Unique ID for each circle */

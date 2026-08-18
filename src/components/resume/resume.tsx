@@ -4,7 +4,7 @@ import resumeData from '../../data/resume.json';
 import './resume.scss';
 import VisualAid from './visualaid';
 // @ts-ignore
-import ankitResumePdf from '../../assets/resume/ankitresume.pdf';
+import ankitResumePdf from '../../assets/resume/Ankit_2022uec1769.pdf';
 
 const Resume: React.FC = () => {
   const data: ResumeData = resumeData;
