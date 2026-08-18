@@ -2,11 +2,20 @@ import React, { useState, useMemo } from 'react';
 import { FaGithub, FaGlobe, FaSearch } from 'react-icons/fa';
 import './projects.scss';
 
-// Importing assets for project GIFs
-import portfolioGif from '../../assets/projects/Portfolio.gif';
-import wanderlyGif from '../../assets/projects/wanderly.gif';
-import mdpsGif from '../../assets/projects/mdpsgif.gif';
-import chatAppPng from '../../assets/projects/ChatApp.png';
+// Project previews. The motion previews are short silent videos rather than
+// GIFs -- see project_media.tsx for why.
+import ProjectMedia, { MediaAsset } from './project_media';
+
+import portfolioWebm from '../../assets/projects/video/Portfolio.webm';
+import portfolioMp4 from '../../assets/projects/video/Portfolio.mp4';
+import portfolioPoster from '../../assets/projects/video/Portfolio-poster.webp';
+import wanderlyWebm from '../../assets/projects/video/wanderly.webm';
+import wanderlyMp4 from '../../assets/projects/video/wanderly.mp4';
+import wanderlyPoster from '../../assets/projects/video/wanderly-poster.webp';
+import mdpsWebm from '../../assets/projects/video/mdpsgif.webm';
+import mdpsMp4 from '../../assets/projects/video/mdpsgif.mp4';
+import mdpsPoster from '../../assets/projects/video/mdpsgif-poster.webp';
+import chatAppImg from '../../assets/projects/ChatApp.webp';
 
 // Import projects data
 import projectsData from '../../data/projects.json'; 
@@ -16,7 +25,7 @@ interface Project {
   id: string;
   title: string;
   description: string;
-  image: string;
+  media: string;
   featured: boolean;
   category: 'big' | 'small';
   technologies: {
@@ -32,18 +41,12 @@ interface Project {
 }
 
 
-// Asset mapping for project images
-const assetMap: { [key: string]: string } = {
-  'Portfolio.gif': portfolioGif,
-  'wanderly.gif': wanderlyGif,
-  'mdpsgif.gif': mdpsGif,
-  'ChatApp.png': chatAppPng,
-};
-
-// Handle the "Coming Soon" click event
-const handleComingSoonClick = (event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>) => {
-  event.preventDefault();
-  alert('Coming soon!');
+// Asset mapping for project previews
+const mediaMap: { [key: string]: MediaAsset } = {
+  portfolio: { poster: portfolioPoster, webm: portfolioWebm, mp4: portfolioMp4 },
+  wanderly: { poster: wanderlyPoster, webm: wanderlyWebm, mp4: wanderlyMp4 },
+  mdps: { poster: mdpsPoster, webm: mdpsWebm, mp4: mdpsMp4 },
+  'chat-app': { poster: chatAppImg },
 };
 
 const Projects: React.FC = () => {
@@ -118,12 +121,12 @@ const Projects: React.FC = () => {
   };
 
   const renderProject = (project: Project, isSmall: boolean = false) => {
-    const imageSrc = assetMap[project.image] || portfolioGif;
+    const media = mediaMap[project.media] || mediaMap.portfolio;
     const containerClass = isSmall ? 'small-project' : 'project-container';
 
     return (
       <div key={project.id} className={containerClass}>
-        <img src={imageSrc} alt={`${project.title} Project`} />
+        <ProjectMedia media={media} title={project.title} />
         <div className="project-content">
           <div className="project-header">
             <h3>{project.title}</h3>
@@ -144,20 +147,11 @@ const Projects: React.FC = () => {
                 <FaGlobe /> Try it Out
               </a>
             ) : (
-              <button onClick={handleComingSoonClick} style={{ 
-                background: 'none', 
-                border: 'none', 
-                color: '#9b59b6', 
-                fontSize: '1.2em',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                cursor: 'pointer',
-                textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)',
-                fontFamily: 'inherit'
-              }}>
-                <FaGlobe /> Try it Out
-              </button>
+              /* No live demo yet. Render it as plainly unavailable rather than as
+                 a link-alike that only fires an alert. */
+              <span className="demo-unavailable">
+                <FaGlobe /> Demo coming soon
+              </span>
             )}
           </div>
         </div>

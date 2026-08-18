@@ -65,6 +65,36 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
+    /* Occupies the iframe's exact footprint until the PDF swaps itself in,
+       so the layout does not shift. */
+    .pdf-placeholder {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 8px;
+      background: rgba(30, 30, 30, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      font-family: 'RobotoMono', sans-serif;
+
+      .pdf-placeholder-icon {
+        font-size: 3em;
+        line-height: 1;
+        opacity: 0.6;
+      }
+
+      .pdf-placeholder-label {
+        font-size: 1em;
+      }
+
+      @media (max-width: 768px) {
+        height: 320px;
+      }
+    }
+
     .pdf-footer {
       margin-top: 20px;
       display: flex;

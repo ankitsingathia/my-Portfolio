@@ -101,6 +101,8 @@
 .nav-link {
   display: flex;
   align-items: center;
+  /* WCAG 2.5.5 minimum touch target. */
+  min-height: 44px;
   margin-left: 40px;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
@@ -118,7 +120,7 @@
   }
 
   svg {
-    margin-right: 8px;
+    flex-shrink: 0;
     transition: transform 0.3s ease;
   }
 
@@ -150,6 +152,11 @@
 .button {
   display: flex;
   align-items: center;
+  /* gap, rather than a margin on every svg -- the trailing icon was being
+     pushed into the border. */
+  gap: 8px;
+  white-space: nowrap;
+  min-height: 44px;
   margin-left: 40px;
   padding: 10px 20px;
   border: 2px solid #a855f7;
@@ -175,7 +182,7 @@
   }
 
   svg {
-    margin-right: 8px;
+    flex-shrink: 0;
     transition: transform 0.3s ease;
   }
 

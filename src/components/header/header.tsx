@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           onClick={() => setIsOpen(false)}
         >
           <FaStar />
-          {`or\u00A0`}
+          <span className="button-label">Star&nbsp;/&nbsp;Fork</span>
           <FaCodeBranch />
         </a>
       </nav>
