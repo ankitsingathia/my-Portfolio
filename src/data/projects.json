@@ -4,73 +4,135 @@
       "id": "wanderly",
       "title": "Wanderly",
       "description": "An AI-powered trip planner that generates personalized day-wise itineraries using Google Gemini AI, featuring destination search and Firebase integration.",
-      "image": "wanderly.gif",
       "featured": true,
       "category": "big",
       "technologies": {
-        "languages": ["JavaScript", "HTML", "CSS"],
-        "frameworks": ["React", "Tailwind CSS"],
-        "libraries": ["Google Gemini AI", "Firebase Firestore", "Google Places API", "ShadCN"]
+        "languages": [
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ],
+        "frameworks": [
+          "React",
+          "Tailwind CSS"
+        ],
+        "libraries": [
+          "Google Gemini AI",
+          "Firebase Firestore",
+          "Google Places API",
+          "ShadCN"
+        ]
       },
-      "tags": ["Full-Stack", "AI", "Travel Planner", "Google Gemini"],
+      "tags": [
+        "Full-Stack",
+        "AI",
+        "Travel Planner",
+        "Google Gemini"
+      ],
       "links": {
         "github": "https://github.com/ankitsingathia/tripplanner",
         "demo": "https://tripplanner-jtno.onrender.com"
-      }
+      },
+      "media": "wanderly"
     },
     {
       "id": "mdps",
       "title": "Multiple Disease Prediction System (MDPS)",
       "description": "A professional, AI-driven healthcare system using machine learning to predict diseases based on user input, featuring a modern glassmorphism UI.",
-      "image": "mdpsgif.gif",
       "featured": true,
       "category": "big",
       "technologies": {
-        "languages": ["Python"],
-        "frameworks": ["Streamlit"],
-        "libraries": ["Scikit-Learn", "Pickle", "Pandas", "NumPy"]
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "Streamlit"
+        ],
+        "libraries": [
+          "Scikit-Learn",
+          "Pickle",
+          "Pandas",
+          "NumPy"
+        ]
       },
-      "tags": ["Machine Learning", "Healthcare", "Python", "Streamlit"],
+      "tags": [
+        "Machine Learning",
+        "Healthcare",
+        "Python",
+        "Streamlit"
+      ],
       "links": {
         "github": "https://github.com/ankitsingathia/MDPS",
         "demo": "https://lb6qshk8uqrhexvgmuthwy.streamlit.app/"
-      }
+      },
+      "media": "mdps"
     },
     {
       "id": "chat-app",
       "title": "Real-Time Chat Application",
       "description": "A full-stack MERN chat app with real-time bidirectional messaging via Socket.io, featuring JWT authentication and Cloudinary integration for media.",
-      "image": "ChatApp.png",
       "featured": true,
       "category": "big",
       "technologies": {
-        "languages": ["JavaScript"],
-        "frameworks": ["MongoDB", "Express", "React", "Node.js"],
-        "libraries": ["Socket.io", "JWT", "Cloudinary", "Tailwind CSS"]
+        "languages": [
+          "JavaScript"
+        ],
+        "frameworks": [
+          "MongoDB",
+          "Express",
+          "React",
+          "Node.js"
+        ],
+        "libraries": [
+          "Socket.io",
+          "JWT",
+          "Cloudinary",
+          "Tailwind CSS"
+        ]
       },
-      "tags": ["MERN Stack", "Socket.io", "Real-Time", "Full-Stack"],
+      "tags": [
+        "MERN Stack",
+        "Socket.io",
+        "Real-Time",
+        "Full-Stack"
+      ],
       "links": {
         "github": "https://github.com/ankitsingathia/Realtime-Chat-App",
         "demo": null
-      }
+      },
+      "media": "chat-app"
     },
     {
       "id": "portfolio",
       "title": "Portfolio Website",
       "description": "A modern, responsive portfolio website built with React and TypeScript to showcase projects and professional experience.",
-      "image": "Portfolio.gif",
       "featured": true,
       "category": "small",
       "technologies": {
-        "languages": ["TypeScript", "SASS", "HTML"],
-        "frameworks": ["React"],
-        "libraries": ["Styled Components", "React Router", "React Spring"]
+        "languages": [
+          "TypeScript",
+          "SASS",
+          "HTML"
+        ],
+        "frameworks": [
+          "React"
+        ],
+        "libraries": [
+          "Styled Components",
+          "React Router",
+          "React Spring"
+        ]
       },
-      "tags": ["Web App", "Portfolio", "React"],
+      "tags": [
+        "Web App",
+        "Portfolio",
+        "React"
+      ],
       "links": {
         "github": "https://github.com/ankitsingathia/my-Portfolio",
         "demo": "https://ankitsingathia.github.io/my-Portfolio"
-      }
+      },
+      "media": "portfolio"
     }
   ]
 }

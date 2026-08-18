@@ -38,11 +38,9 @@
           "company": "@Bharti Airtel Limited",
           "dates": "May 2025 - July 2025",
           "bulletPoints": [
-            "Developed an internal network monitoring dashboard using Python, Flask, and MySQL to track real-time network performance metrics across multiple towers.",
-            "Built REST APIs for data aggregation from network devices and integrated SMS alert system using Twilio API for critical failures.",
-            "Designed the frontend using React.js with interactive charts to visualize tower uptime, signal strength, and customer complaints.",
-            "Implemented user authentication and role-based access control for network engineers and managers.",
-            "Deployed the application on AWS EC2 and documented the entire system architecture and API endpoints."
+            "Developed a RAG-powered AI customer support chatbot using Python, LangChain, and Gemini API to resolve network outage queries, recharge issues, and complaint tickets for internal support agents.",
+            "Built a FAISS vector knowledge base over 500+ Airtel FAQ documents and piped real-time tower status from MySQL into the retrieval context, enabling grounded, hallucination-resistant responses.",
+            "Designed a Flask + WebSocket backend for real-time bidirectional chat with Redis session caching for concurrent users; implemented intent-based prompt routing across billing, outage, and plan-upgrade flows."
           ]
         }
       ]
@@ -55,7 +53,7 @@
           "company": "@Udemy",
           "dates": "2026 - Present",
           "bulletPoints": [
-            "Master Python, Machine Learning, DL, MLOps, and Gen AI through hands-on projects to become a Full-Stack AI Engineer."
+            "Covers Python, Machine Learning, Deep Learning, MLOps, LLMs, and Generative AI through production-grade hands-on projects."
           ]
         }
       ]
@@ -72,20 +70,20 @@
           ]
         },
         {
+          "title": "LeetCode",
+          "company": "@LeetCode",
+          "dates": "Rating: 1790",
+          "bulletPoints": [
+            "Solved 1000+ problems spanning arrays, DP, graphs, trees, and system design.",
+            "Profile: AnkitSingahia"
+          ]
+        },
+        {
           "title": "CodeChef 3-Star",
           "company": "@CodeChef",
           "dates": "Rating: 1651",
           "bulletPoints": [
-            "Competitive Programming profile: ankitsingathia",
-            "Solved 30 problems on CodeChef"
-          ]
-        },
-        {
-          "title": "LeetCode Practice",
-          "company": "@LeetCode",
-          "dates": "",
-          "bulletPoints": [
-            "Data Structures and Algorithms profile: AnkitSingahia"
+            "Competitive Programming profile: ankitsingathia"
           ]
         }
       ]
@@ -102,27 +100,43 @@
           ]
         },
         {
-          "title": "Frameworks/Libraries",
+          "title": "Frameworks & Libraries",
           "company": "",
           "dates": "",
           "bulletPoints": [
-            "React.js, Node.js, Express.js, Flask, Tailwind CSS, Bootstrap"
+            "React.js, Node.js, Express.js, Flask, LangChain, Socket.io, Tailwind CSS, scikit-learn, pandas"
           ]
         },
         {
-          "title": "Tools/Technologies",
+          "title": "Databases & Caching",
           "company": "",
           "dates": "",
           "bulletPoints": [
-            "Git, GitHub, AWS (EC2), Docker, MySQL, Firebase, MongoDB"
+            "MongoDB, MySQL, Firebase Firestore, Redis, FAISS (vector store)"
           ]
         },
         {
-          "title": "Specializations",
+          "title": "Tools & Platforms",
           "company": "",
           "dates": "",
           "bulletPoints": [
-            "Competitive Programming, Full-Stack Development, Generative AI, Machine Learning"
+            "Git, GitHub, AWS (EC2), Vercel, Render, Postman, Streamlit Cloud, VS Code"
+          ]
+        },
+        {
+          "title": "APIs & Services",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "Gemini API, Overpass API, Twilio API, Google OAuth, RESTful APIs, WebSocket"
+          ]
+        },
+        {
+          "title": "Concepts",
+          "company": "",
+          "dates": "",
+          "bulletPoints": [
+            "Data Structures & Algorithms, System Design, RAG, OOPs, DBMS, ML Pipelines, Linux"
           ]
         }
       ]

@@ -22,7 +22,7 @@ const ContributionMap: React.FC = () => {
     <div className="contribution-map-container">
       <section className="contribution-map">
         <div className="calendar-section">
-          <h3 className="year-label">/2026 Contributions</h3>
+          <h3 className="year-label">ankitsingathia / 2026 Contributions</h3>
           <div className="calendar-wrapper">
             <GitHubCalendar
               username="ankitsingathia"

@@ -37,20 +37,25 @@ const App: React.FC = () => {
   return (
     <Router>
       <AppContainer>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <Header />
-        <Hero />
+        <main id="main-content">
+          <Hero />
 
-        <About />
-        
-        <Profiles />
+          <About />
 
-        <Resume />
+          <Profiles />
 
-        <Projects />
+          <Resume />
 
-        <ContributionMap />
+          <Projects />
 
-        <SocialLinks />
+          <ContributionMap />
+
+          <SocialLinks />
+        </main>
         <Footer />
         {/* <ChatBubble /> */}
       </AppContainer>

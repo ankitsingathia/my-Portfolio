@@ -84,6 +84,12 @@ const SocialIcons = styled.div`
     color: rgba(255, 255, 255, 0.7);
     font-size: clamp(1.8em, 3vw, 2.2em);
     transition: all 0.3s ease;
+    /* WCAG 2.5.5 minimum touch target. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
 
     &:hover {
       color: #d4a1ff;
@@ -102,10 +108,10 @@ const SocialLinks: React.FC = () => {
         Feel free to <span className="highlight">connect</span> with me
       </SocialDescription>
       <SocialIcons>
-        <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-        <a href="https://www.linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
-        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer"><SiCodechef /></a>
+        <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on GitHub"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on LinkedIn"><FaLinkedin /></a>
+        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on LeetCode"><SiLeetcode /></a>
+        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on CodeChef"><SiCodechef /></a>
       </SocialIcons>
     </SocialContainer>
   );

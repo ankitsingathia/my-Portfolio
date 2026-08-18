@@ -96,6 +96,12 @@
       font-size: clamp(1.3em, 2vw, 1.6em);
       transition: all 0.3s ease;
       position: relative;
+      /* WCAG 2.5.5 minimum touch target. */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
       z-index: 1;
 
       &:hover {

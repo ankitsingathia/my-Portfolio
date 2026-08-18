@@ -10,8 +10,8 @@ const Profiles: React.FC = () => {
       link: 'https://leetcode.com/u/AnkitSingahia/',
       icon: <SiLeetcode />,
       color: '#ffa116',
-      rating: 'DSA Practice',
-      description: 'Solving data structures and algorithms problems for technical interviews.'
+      rating: '1000+ solved (Rating: 1790)',
+      description: 'Arrays, DP, graphs, trees, and system design problems for technical interviews.'
     },
     {
       platform: 'CodeChef',

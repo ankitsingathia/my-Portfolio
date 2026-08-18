@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
         <p>&copy; Ankit Singathia 2026</p>
       </div>
       <div className="right-align social-icons">
-        <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-        <a href="https://linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
-        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer"><SiCodechef /></a>
+        <a href="https://github.com/ankitsingathia" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on GitHub"><FaGithub /></a>
+        <a href="https://linkedin.com/in/ankit-singathia-467203258/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on LinkedIn"><FaLinkedin /></a>
+        <a href="https://leetcode.com/u/AnkitSingahia/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on LeetCode"><SiLeetcode /></a>
+        <a href="https://www.codechef.com/users/ankitsingathia" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singathia on CodeChef"><SiCodechef /></a>
       </div>
     </footer>
   );

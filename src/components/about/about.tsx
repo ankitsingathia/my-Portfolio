@@ -1,16 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./about.scss";
 
-import portrait from "../../assets/me/jpg/potrait.png";
+import portrait from "../../assets/me/webp/potrait.webp";
+import headshot from "../../assets/me/webp/headshot.webp";
 
-const photos = [portrait];
+const photos = [
+  { src: portrait, alt: "Ankit Singathia" },
+  { src: headshot, alt: "Ankit Singathia, portrait" },
+];
+
+const CROSSFADE_INTERVAL_MS = 5000;
 
 const About: React.FC = () => {
-  const [photo, setPhoto] = useState("");
+  // Start on a random photo (as before), then alternate between them.
+  const [index, setIndex] = useState(() =>
+    Math.floor(Math.random() * photos.length)
+  );
 
   useEffect(() => {
-    const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
-    setPhoto(randomPhoto);
+    if (photos.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const timer = window.setInterval(
+      () => setIndex((i) => (i + 1) % photos.length),
+      CROSSFADE_INTERVAL_MS
+    );
+    return () => window.clearInterval(timer);
   }, []);
 
   return (
@@ -74,7 +89,21 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className="about-photo">
-          <img src={photo} alt="Ankit Singathia" />
+          {/* Both photos are stacked and cross-faded, so the box never resizes
+              even though the two images have different aspect ratios. */}
+          <div className="photo-stack">
+            {photos.map((p, i) => (
+              <img
+                key={p.src}
+                src={p.src}
+                alt={i === index ? p.alt : ""}
+                aria-hidden={i === index ? undefined : true}
+                className={i === index ? "is-visible" : ""}
+                loading="lazy"
+                decoding="async"
+              />
+            ))}
+          </div>
         </div>
       </section>
     </div>
