@@ -20,7 +20,7 @@
     "sass-loader": "^14.2.1",
     "styled-components": "^6.1.13",
     "typescript": "^5.5.4",
-    "date-fns": "^3.6.0"
+    "date-fns": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -58,10 +58,10 @@
   },
   "pnpm": {
     "overrides": {
-      "date-fns": "^3.6.0"
+      "date-fns": "^4.4.0"
     }
   },
   "overrides": {
-    "date-fns": "^3.6.0"
+    "date-fns": "^4.4.0"
   }
 }
