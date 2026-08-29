@@ -258,16 +258,12 @@ interface Talk {
 
 // Constants for hero component
 const topLines = [
-  "You're finally awake. Let's explore my work.",
-  "In a galaxy far, far away, I created this portfolio.",
-  "Winter is coming, but you're safe here. Explore my work.",
-  "Welcome to my corner of the web!",
-  "Greetings! I'm thrilled to have you here.",
-  "Hi! Thanks for dropping by.",
-  "It's dangerous to go alone! Take this portfolio.",
-  "Say hello to my little projects!",
-  "Welcome to the dark side of my portfolio.",
-  "One portfolio to rule them all.",
+  "Welcome to my portfolio.",
+  "Hello, and thanks for stopping by.",
+  "Good to have you here.",
+  "Welcome. Take a look around.",
+  "Thanks for taking the time to visit.",
+  "Glad you stopped by.",
 ]; // Array of possible headline texts
 
 const typewriterTexts = [
