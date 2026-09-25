@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/my-Portfolio/static/css/main.9e9f3e20.css",
-    "main.js": "/my-Portfolio/static/js/main.953f736b.js",
-    "static/media/DigitalAdrenaline.gif": "/my-Portfolio/static/media/DigitalAdrenaline.a44ff47dce7d809bdf26.gif",
-    "static/media/Pathfinder.gif": "/my-Portfolio/static/media/Pathfinder.9a86ba7c29c69f5ec782.gif",
-    "static/media/MySecretary.gif": "/my-Portfolio/static/media/MySecretary.d1e2a6f1f23d6376b409.gif",
-    "static/media/habit.gif": "/my-Portfolio/static/media/habit.b216a4a811fbf75f5d4f.gif",
-    "static/media/Portfolio.gif": "/my-Portfolio/static/media/Portfolio.790a6e5526bfc90474d2.gif",
-    "static/media/PokePC.gif": "/my-Portfolio/static/media/PokePC.0e1b9e00f819bd234496.gif",
-    "static/media/IMG_20250301_170848.jpg": "/my-Portfolio/static/media/IMG_20250301_170848.0d727447c669b177fd39.jpg",
-    "static/media/Ecovest.gif": "/my-Portfolio/static/media/Ecovest.ee6c1e5820019af83bb4.gif",
-    "static/media/PrivacyXPresso.gif": "/my-Portfolio/static/media/PrivacyXPresso.8f4426f1086da1ed2fbc.gif",
-    "static/media/InvestSmart.gif": "/my-Portfolio/static/media/InvestSmart.6d622b5ac8cbeacb2a9f.gif",
-    "static/media/TravelGenie.png": "/my-Portfolio/static/media/TravelGenie.51336848890e2bc9bb04.png",
-    "static/media/ChatApp.png": "/my-Portfolio/static/media/ChatApp.90551ff0b77a15b36f71.png",
-    "static/media/IMAGE.png": "/my-Portfolio/static/media/IMAGE.0fb2ba15b6d2542c2161.png",
+    "main.css": "/my-Portfolio/static/css/main.3b078124.css",
+    "main.js": "/my-Portfolio/static/js/main.43da3ec4.js",
+    "static/media/Portfolio.webm": "/my-Portfolio/static/media/Portfolio.94bafd9991e0c6c00acf.webm",
+    "static/media/Portfolio.mp4": "/my-Portfolio/static/media/Portfolio.0865fa64fcd20b90a70e.mp4",
+    "static/media/wanderly.mp4": "/my-Portfolio/static/media/wanderly.9a561f2542d3eb852da3.mp4",
+    "static/media/wanderly.webm": "/my-Portfolio/static/media/wanderly.8ce52324f46991fba532.webm",
     "static/media/Inter-Regular.ttf": "/my-Portfolio/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
-    "static/media/ankitresume.pdf": "/my-Portfolio/static/media/ankitresume.191f9b5babcb7dd8f2a4.pdf",
+    "static/media/mdpsgif.mp4": "/my-Portfolio/static/media/mdpsgif.025e6038007f0a4d99a3.mp4",
+    "static/media/mdpsgif.webm": "/my-Portfolio/static/media/mdpsgif.b956631c1f472c729df3.webm",
+    "static/media/Ankit_2022uec1769.pdf": "/my-Portfolio/static/media/Ankit_2022uec1769.9621d12bc393373cfec8.pdf",
     "static/media/RobotoMono-Regular.ttf": "/my-Portfolio/static/media/RobotoMono-Regular.94ffabb10cbc81ee42ba.ttf",
     "static/media/RobotoMono-Medium.ttf": "/my-Portfolio/static/media/RobotoMono-Medium.275e41b58d96111c1152.ttf",
+    "static/media/wanderly-poster.webp": "/my-Portfolio/static/media/wanderly-poster.7c27e99ca1ebd63d7e34.webp",
     "static/media/spaceship.webp": "/my-Portfolio/static/media/spaceship.d2dee8ccdbeaa6c6bd9d.webp",
+    "static/media/Portfolio-poster.webp": "/my-Portfolio/static/media/Portfolio-poster.bfca5563645fb5a6c898.webp",
+    "static/media/mdpsgif-poster.webp": "/my-Portfolio/static/media/mdpsgif-poster.482c833660cc9ba0cb24.webp",
+    "static/media/potrait.webp": "/my-Portfolio/static/media/potrait.a86853372ad5afd99c6f.webp",
+    "static/media/nport.webp": "/my-Portfolio/static/media/nport.9c9f2d27e1fa5c3aba62.webp",
+    "static/media/ChatApp.webp": "/my-Portfolio/static/media/ChatApp.0949d03f0d32da9574ab.webp",
+    "static/media/headshot.webp": "/my-Portfolio/static/media/headshot.3945a70476cdfd6463e7.webp",
+    "static/media/ga4.webp": "/my-Portfolio/static/media/ga4.3c677eaa638c225ca71d.webp",
     "index.html": "/my-Portfolio/index.html",
-    "main.9e9f3e20.css.map": "/my-Portfolio/static/css/main.9e9f3e20.css.map",
-    "main.953f736b.js.map": "/my-Portfolio/static/js/main.953f736b.js.map"
+    "main.3b078124.css.map": "/my-Portfolio/static/css/main.3b078124.css.map",
+    "main.43da3ec4.js.map": "/my-Portfolio/static/js/main.43da3ec4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9f3e20.css",
-    "static/js/main.953f736b.js"
+    "static/css/main.3b078124.css",
+    "static/js/main.43da3ec4.js"
   ]
 }
