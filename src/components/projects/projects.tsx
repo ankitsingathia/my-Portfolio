@@ -16,6 +16,8 @@ import mdpsWebm from '../../assets/projects/video/mdpsgif.webm';
 import mdpsMp4 from '../../assets/projects/video/mdpsgif.mp4';
 import mdpsPoster from '../../assets/projects/video/mdpsgif-poster.webp';
 import chatAppImg from '../../assets/projects/ChatApp.webp';
+import nportImg from '../../assets/projects/nport.webp';
+import ga4Img from '../../assets/projects/ga4.webp';
 
 // Import projects data
 import projectsData from '../../data/projects.json'; 
@@ -47,6 +49,8 @@ const mediaMap: { [key: string]: MediaAsset } = {
   wanderly: { poster: wanderlyPoster, webm: wanderlyWebm, mp4: wanderlyMp4 },
   mdps: { poster: mdpsPoster, webm: mdpsWebm, mp4: mdpsMp4 },
   'chat-app': { poster: chatAppImg },
+  'nport-lending': { poster: nportImg },
+  'ga4-analytics': { poster: ga4Img },
 };
 
 const Projects: React.FC = () => {

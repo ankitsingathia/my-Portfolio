@@ -68,6 +68,75 @@
       "media": "mdps"
     },
     {
+      "id": "nport-lending",
+      "title": "Securities Lending Exposure in US Funds",
+      "description": "Who borrows securities from 12,944 US mutual funds and ETFs, how concentrated that borrowing is, and whether collateral covers it, from four quarters of SEC Form N-PORT filings. Borrower names are resolved to parent groups through the GLEIF registry, and a two-page Power BI report sits on top.",
+      "featured": true,
+      "category": "big",
+      "technologies": {
+        "languages": [
+          "SQL",
+          "Python"
+        ],
+        "frameworks": [
+          "DuckDB",
+          "Power BI"
+        ],
+        "libraries": [
+          "pandas",
+          "Matplotlib",
+          "pytest",
+          "GLEIF API",
+          "GitHub Actions"
+        ]
+      },
+      "tags": [
+        "Data Analysis",
+        "Finance",
+        "SQL",
+        "Power BI"
+      ],
+      "links": {
+        "github": "https://github.com/ankitsingathia/nport-securities-lending",
+        "demo": "https://ankitsingathia.github.io/nport-securities-lending/docs/readout.html"
+      },
+      "media": "nport-lending"
+    },
+    {
+      "id": "ga4-analytics",
+      "title": "Where the Google Merchandise Store Loses Its Shoppers",
+      "description": "Three months of Google Analytics 4 data from Google's own merch store, 4.3M events from 270K people. An audit of the export first found three tracking faults, including one that would have dropped a third of real buyers from the funnel, then the funnel, retention and channel analysis on the cleaned data.",
+      "featured": true,
+      "category": "big",
+      "technologies": {
+        "languages": [
+          "SQL",
+          "Python"
+        ],
+        "frameworks": [
+          "BigQuery",
+          "dbt",
+          "DuckDB"
+        ],
+        "libraries": [
+          "pandas",
+          "SciPy",
+          "Matplotlib"
+        ]
+      },
+      "tags": [
+        "Product Analytics",
+        "Data Analysis",
+        "SQL",
+        "A/B Testing"
+      ],
+      "links": {
+        "github": "https://github.com/ankitsingathia/ga4-product-analytics",
+        "demo": "https://ankitsingathia.github.io/ga4-product-analytics/docs/readout.html"
+      },
+      "media": "ga4-analytics"
+    },
+    {
       "id": "chat-app",
       "title": "Real-Time Chat Application",
       "description": "A full-stack MERN chat app with real-time bidirectional messaging via Socket.io, featuring JWT authentication and Cloudinary integration for media.",
