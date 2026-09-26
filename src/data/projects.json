@@ -98,7 +98,7 @@
       ],
       "links": {
         "github": "https://github.com/ankitsingathia/nport-securities-lending",
-        "demo": "https://ankitsingathia.github.io/nport-securities-lending/docs/readout.html"
+        "demo": "https://ankitsingathia.github.io/nport-securities-lending/docs/report.html"
       },
       "media": "nport-lending"
     },
@@ -132,7 +132,7 @@
       ],
       "links": {
         "github": "https://github.com/ankitsingathia/ga4-product-analytics",
-        "demo": "https://ankitsingathia.github.io/ga4-product-analytics/docs/readout.html"
+        "demo": "https://ankitsingathia.github.io/ga4-product-analytics/docs/report.html"
       },
       "media": "ga4-analytics"
     },
